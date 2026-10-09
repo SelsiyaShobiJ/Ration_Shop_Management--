@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff Login</title>
-    <link rel="stylesheet" href="css/staff_login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
+    <link rel="stylesheet" href="../css/staff_login.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="login-box">
-        <i class="far fa-user"></i>
-        <h2>Staff Login</h2>
-        <p>Access your staff account</p>
-        
-         <button><i class="fas fa-user"></i> user login</button>
-        <br><br>
-        <button><i class="far fa-user"></i> staff login </button>
-        <p> New user? <a href="register.html">Register here</a></p>
-</div>
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i> Back to Login
+        </a>
 
+        <h3><i class="far fa-user"></i> Staff Login</h3>
+        <p>Access your staff account</p>
+
+        <form >
+            <div class="staff_Id">
+                <i class="far fa-user"></i>
+                <input
+                    type="text"
+                    id="staff_id"
+                    name="staff_id"
+                    placeholder="Staff ID"
+                    required
+                >
+            </div>
+
+            <div class="password">
+                <i class="fas fa-lock"></i>
+                <input
+                    type="password"
+                    id="staff_password"
+                    name="staff_password"
+                    placeholder="Enter Password"
+                    required
+                >
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
